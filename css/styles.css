@@ -1,0 +1,61 @@
+body {
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: left -100px top -500px, right -100px bottom -500px;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  min-height: 100vh;
+  min-width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-card {
+  border-radius: 5% 5% 0 0;
+  width: 100%;
+  height: 100px;
+}
+.header-img {
+  border-radius: inherit;
+  width: inherit;
+}
+
+main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #179ca5;
+}
+
+.background {
+  display: grid;
+  height: 50vh;
+  width: 50vw;
+  grid-template-rows: 3fr 5fr;
+  grid-template-areas: "backgroundTop" "backgroundBottom";
+}
+
+.background .top {
+  grid-area: backgroundTop;
+  background-color: #179ca5;
+}
+
+.background .top img {
+  display: block;
+  margin: 10vh auto 0 auto;
+  padding-right: 3vw;
+  max-height: 13rem;
+  max-width: 13rem;
+  z-index: 1;
+  position: relative;
+  border: 3px orange solid;
+  top: 50px;
+}
+
+.background .bottom {
+  grid-area: backgroundBottom;
+  color: white;
+  background-color: black;
+}
