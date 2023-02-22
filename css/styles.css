@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.1rem;
 }
 
 .header-card {
@@ -82,6 +83,7 @@ main {
 
 .title .title-age p {
   font-weight: 400;
+  margin-left: 10px;
 }
 
 .title-location {
@@ -99,17 +101,34 @@ main {
 }
 
 .footer .followers {
-  padding: 30px;
+  padding: 0 30px;
 }
 .footer .photos {
-  padding: 30px;
+  padding: 0 30px;
 }
 .footer .likes {
-  padding: 30px;
+  padding: 0 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 1.5rem;
+  }
   .background {
-    height: 60rem;
+    height: 45rem;
+    width: 40rem;
+  }
+
+  .background .top img {
+    width: 10rem;
+    margin-left: 38%;
+  }
+  .footer {
+    padding: 50px;
+  }
+
+  .title {
+    grid-template-columns: repeat(2, 170px);
+    margin-left: 140px;
   }
 }
